@@ -1,0 +1,206 @@
+[
+	{   
+		"visitor_id": 1,
+		"channel_name":"WinningCheckers",
+		"date":"2020-03-29",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 2,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-03",
+		"unique_visitors":7
+	},
+	{   
+		"visitor_id": 3,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-05",
+		"unique_visitors":2
+	},
+	{   
+		"visitor_id": 4,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-10",
+		"unique_visitors":8
+	},
+	{   
+		"visitor_id": 5,
+		"channel_name":"WinningCheckers",
+		"date":"2020-4-16",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 6,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-19",
+		"unique_visitors":2
+	},
+	{   
+		"visitor_id": 7,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-23",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 8,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-24",
+		"unique_visitors":2
+	},
+	{   
+		"visitor_id": 9,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-27",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 10,
+		"channel_name":"WinningCheckers",
+		"date":"2020-04-30",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 11,
+		"channel_name":"WinningCheckers",
+		"date":"2020-05-11",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 12,
+		"channel_name":"WinningCheckers",
+		"date":"2020-05-13",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 13,
+		"channel_name":"WinningCheckers",
+		"date":"2020-05-15",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 14,
+		"channel_name":"WinningCheckers",
+		"date":"2020-06-05",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 15,
+		"channel_name":"WinningCheckers",
+		"date":"2020-06-09",
+		"unique_visitors":2
+	},
+	{   
+		"visitor_id": 16,
+		"channel_name":"WinningCheckers",
+		"date":"2020-06-14",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 17,
+		"channel_name":"WinningCheckers",
+		"date":"2020-07-03",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 18,
+		"channel_name":"WinningCheckers",
+		"date":"2020-07-06",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 19,
+		"channel_name":"WinningCheckers",
+		"date":"2020-07-10",
+		"unique_visitors":2
+	},
+	{   
+		"visitor_id": 20,
+		"channel_name":"WinningCheckers",
+		"date":"2020-07-21",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 21,
+		"channel_name":"WinningCheckers",
+		"date":"2020-07-27",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 22,
+		"channel_name":"WinningCheckers",
+		"date":"2020-07-30",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 23,
+		"channel_name":"WinningCheckers",
+		"date":"2020-08-16",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 24,
+		"channel_name":"WinningCheckers",
+		"date":"2020-08-25",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 25,
+		"channel_name":"WinningCheckers",
+		"date":"2020-09-05",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 26,
+		"channel_name":"WinningCheckers",
+		"date":"2020-09-27",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 27,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-03",
+		"unique_visitors":1
+	},
+	{   
+		"visitor_id": 28,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-05",
+		"unique_visitors":1
+	},
+		{   
+		"visitor_id": 29,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-10",
+		"unique_visitors":1
+	},
+		{   
+		"visitor_id": 30,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-15",
+		"unique_visitors":1
+	},
+		{   
+		"visitor_id": 31,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-21",
+		"unique_visitors":1
+	},
+		{   
+		"visitor_id": 32,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-26",
+		"unique_visitors":2
+	},
+		{   
+		"visitor_id": 33,
+		"channel_name":"WinningCheckers",
+		"date":"2020-10-31",
+		"unique_visitors":2
+	},
+		{   
+		"visitor_id": 34,
+		"channel_name":"WinningCheckers",
+		"date":"2020-11-2",
+		"unique_visitors":5
+	}
+]
