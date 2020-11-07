@@ -2,9 +2,9 @@
 	{   
 		"traffic_id": 1,
 		"channel_name":"WinningCheckers",
-		"from-date":"2020-03-29",
+		"from_date":"2020-03-29",
 		"to_date":"2020-11-02",
-		"pull-date":"2020-11-02",
+		"pull_date":"2020-11-02",
 		"sessions":132,
 		"unique_visitors":55,
 		"direct":82,
@@ -12,7 +12,7 @@
 		"wix":10,
 		"youtube":7,
 		"bing":5,
-		"n/a":1.64,
+		"n_a":1.64,
 		"new":81.97,
 		"returning":16.39
 	}
