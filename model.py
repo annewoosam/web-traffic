@@ -4,23 +4,63 @@ import datetime
 
 db = SQLAlchemy()
 
-# test = YourClassNameHereInTitleCaseSingular(channel_name='WinningCheckers', email_date='2020-01-31',number_subscribers = '1', month_end_at='2019-12-31', subscribers='0', views='1', minutes_watched='2', likes='3', comments='4', posts='5', shares='6')
+# test = Traffic(channel_name='WinningCheckers', email_date='2020-01-31',number_subscribers = '1', month_end_at='2019-12-31', subscribers='0', views='1', minutes_watched='2', likes='3', comments='4', posts='5', shares='6')
 
-class YourClassNameHereInTitleCaseSingular(db.Model):
-    """A class for creator ."""
+class Traffic(db.Model):
+    """A class for traffic ."""
     
-    __tablename__ = 'YourTableNameHereLowerCasePlural'
+    __tablename__ = 'traffics'
 
-    YourPrimaryIDColumnNameHereLowerCase_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    traffic_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 
-    YourColumnNameHereLowerCase = db.Column(YourDBTypeHereAsdb.typeSuchAsStringIntegerDate)
+    channel_name = db.Column(db.String)
+
+    from_date = db.Column(db.Date)
+
+    to_date = db.column(db.Date)
+
+    pull_date = db.column(db.Date)
+
+    sessions = db.Column(db.Integer)
+
+    unique_visitors = db.Column(db.Integer)
+
+    direct = db.Column(db.Integer)
+
+    google = db.Column(db.Integer)
+    
+    wix = db.Column(db.Integer)
+
+    youtube = db.Column(db.Integer)
+
+    n_a = db.Column(db.Integer)
+
+    new = db.Column(db.Integer)
+
+    returning = db.Column(db.Integer)
+
+    def __repr__(self):
+        return f'<Traffic traffic_id={self.traffic_id} channel_name={self.channel_name}>'
+
+class Visitor(db.Model):
+    """A class for visitor ."""
+    
+    __tablename__ = 'visitors'
+
+    visitor_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+
+    channel_name = db.Column(db.String)
+
+    date = db.Column(db.Date)
+
+    unique_visits = db.Column(db.Integer)
 
 # keep repeating till all column names finished
 
     def __repr__(self):
-        return f'<YourClassNameHereInTitleCaseSingular YourPrimaryKeyVariableHere={self.YourPrimaryKeyVariableHere} SecondColumnVariableNameHere={self.SecondColumnVariableNameHere}>'
+        return f'<Visitor visitor_id={self.visitor_id} channel_name={self.channel_name}>'
 
-def connect_to_db(flask_app, db_uri='postgresql:///YourDatabaseNamehere', echo=True):
+def connect_to_db(flask_app, db_uri='postgresql:///web_traffic', echo=True):
    
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
    
