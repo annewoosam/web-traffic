@@ -34,8 +34,8 @@ for traffic in traffic_data:
     channel_name, from_date, to_date, pull_date, sessions, unique_visitors, direct, google, wix, youtube, bing, n_a, new, returning= (
                                    traffic['channel_name'],
                                    traffic['from_date'],
-                                   traffic['to_date']),
-                                   traffic['pull-date'],
+                                   traffic['to_date'],
+                                   traffic['pull_date'],
                                    traffic['sessions'],
                                    traffic['unique_visitors'],
                                    traffic['direct'],
@@ -45,13 +45,13 @@ for traffic in traffic_data:
                                    traffic['bing'],
                                    traffic['n_a'],
                                    traffic['new'],
-                                   traffic['returning']
+                                   traffic['returning'])
 
     db_traffic = crud.create_traffic(
                                  channel_name,
                                  from_date,
                                  to_date,
-                                 pull-date,
+                                 pull_date,
                                  sessions,
                                  unique_visitors,
                                  direct,
@@ -59,7 +59,7 @@ for traffic in traffic_data:
                                  wix,
                                  youtube,
                                  bing,
-                                 n-a,
+                                 n_a,
                                  new,
                                  returning)
 
@@ -69,7 +69,7 @@ for traffic in traffic_data:
 
 with open('data/visitor.json') as f:
 
-visitor_data = json.loads(f.read())
+    visitor_data = json.loads(f.read())
 
 visitor_in_db = []
 

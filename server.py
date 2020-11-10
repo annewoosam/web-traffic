@@ -1,4 +1,4 @@
-"""Server for YourFolder app."""
+"""Server for Web-Traffic app."""
 
 # increased flask
 
@@ -10,7 +10,7 @@ db = SQLAlchemy()
 
 # created import allowing connection to database
 
-from model import connect_to_db, YourModelNameTitleCaseSingularStats, db
+from model import connect_to_db, Traffic, Visitor, db
 
 app = Flask(__name__)
 
@@ -28,16 +28,18 @@ import crud
 def all_traffic():
 
     stats=crud.get_traffic()
+
+    stats2=crud.get_visitors()
     
-    channel_id=[q[0] for q in db.session.query(Traffic.channel_id).all()]
+    traffic_id=[q[0] for q in db.session.query(Traffic.traffic_id).all()]
 
     channel_name=[q[0] for q in db.session.query(Traffic.channel_name).all()]
      
     from_date=[q[0] for q in db.session.query(Traffic.from_date).all()]
 
-    to_date=[q[0] for q in db.session.query(Traffic.to_date).all()]
+    #to_date=[q[0] for q in db.session.query(Traffic.to_date).all()]
 
-    pull_date=[q[0] for q in db.session.query(Traffic.pull_date).all()]
+    # pull_date=[q[0] for q in db.session.query(Traffic.pull_date).all()]
 
     sessions=[q[0] for q in db.session.query(Traffic.sessions).all()]
 
@@ -53,21 +55,22 @@ def all_traffic():
 
     bing=[q[0] for q in db.session.query(Traffic.bing).all()]
 
-    n_a=[q[0] for q in db.session.query(YourModelNameInTitleCaseHere.n_a).all()]
+    n_a=[q[0] for q in db.session.query(Traffic.n_a).all()]
 
-    new=[q[0] for q in db.session.query(YourModelNameInTitleCaseHere.new).all()]
+    new=[q[0] for q in db.session.query(Traffic.new).all()]
   
-    returning=[q[0] for q in db.session.query(YourModelNameInTitleCaseHere.returning).all()]
+    returning=[q[0] for q in db.session.query(Traffic.returning).all()]
     
-    stats=crud.get_visitors()
-    
-    visitor_id=[q[0] for q in db.session.query(Visitors.visitor_id).all()]
+    visitor_id=[q[0] for q in db.session.query(Visitor.visitor_id).all()]
       
-    date=[q[0] for q in db.session.query(Visitors.date).all()]
+    date=[q[0] for q in db.session.query(Visitor.date).all()]
 
-    unique_visit=[q[0] for q in db.session.query(Visitors.unique_visit).all()]
+    unique_visits=[q[0] for q in db.session.query(Visitor.unique_visits).all()]
 
-    return render_template('traffic.html', channel_id=channel_id, channel_name=channel_name, from_date=from_date, to_date=to_date, pull_date+pull_date, sessions=sessions, unique_visitors=unique_visitors, direct=direct,google=google,wix=wix,youtube=youtube,bing=bing, n_a=n_a, new=new, returning=returning, visitor_id=visitor_id, date=date, unique_visit=unique_visit)
+    return render_template('traffic.html', stats=stats, stats2=stats2,traffic_id=traffic_id,
+     channel_name=channel_name, from_date=from_date, sessions=sessions,
+     unique_visitors=unique_visitors, direct=direct, google=google, wix=wix, youtube=youtube, bing=bing, n_a=n_a,
+     new=new, returning=returning, visitor_id=visitor_id, date=date, unique_visits=unique_visits)
 
 if __name__ == '__main__':
 

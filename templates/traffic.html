@@ -27,7 +27,7 @@
 <!-- Code. -->
 
 
-  <div><h1>Let's Analyze!</h1></div>
+  <div><h1>Web Traffic</h1></div>
   
   <table>
 
@@ -41,38 +41,14 @@
 
     </thead>
 
-      <td>Total Subscribers</td><td><canvas id="YourChartNameWithoutSpacesHere" width="400" height="150"></canvas></td>
-
+      <td>Channel: {{ channel_name }} | From: {{ from_date }} | | | Sessions: {{ sessions }} | Unique Visitors: {{ unique_visitors}} | Direct: {{ direct }} | Google: {{ google }} | Wix: {{ wix }} | Youtube: {{ youtube }} | Bing: {{ bing }} | N/A: {{ n_a }} | New: {{ new }} | Returning: {{ returning }}</td><td><canvas id="traffic" width="400" height="150"></canvas></td>
+      
      </td>
 
 
   </table>
 
-  <script>
- 
-        // bar chart data
 
-            var barData = {
-                labels : [ "April","May","June","July","August","September" ],
-                datasets : [
-                    {
-                        fillColor : "#48A497",
-                        strokeColor : "#48A4D1",
-                        data : {{ YourColumnNameHere }}
-                    }
-                ]
-            }
-
-            // get bar chart canvas
-
-            var YourChartNameWithoutSpacesHere = document.getElementById("YourChartNameWithoutSpacesHere").getContext("2d");
-
-            // draw bar chart
-
-            new Chart(YourChartNameWithoutSpacesHere).Bar(barData);
-
-
-       </script>
 
 
 <!-- JS-based components. -->

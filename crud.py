@@ -21,7 +21,7 @@ def create_traffic(channel_name, from_date, to_date, pull_date, sessions, unique
                   bing=bing,
                   n_a=n_a,
                   new=new,
-                  retruning=returning)
+                  returning=returning)
 
     db.session.add(traffic)
 

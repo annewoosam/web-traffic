@@ -4,12 +4,10 @@ import datetime
 
 db = SQLAlchemy()
 
-# test = Traffic(channel_name='WinningCheckers', email_date='2020-01-31',number_subscribers = '1', month_end_at='2019-12-31', subscribers='0', views='1', minutes_watched='2', likes='3', comments='4', posts='5', shares='6')
-
 class Traffic(db.Model):
     """A class for traffic ."""
     
-    __tablename__ = 'traffics'
+    __tablename__ = 'traffic'
 
     traffic_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 
@@ -32,6 +30,8 @@ class Traffic(db.Model):
     wix = db.Column(db.Integer)
 
     youtube = db.Column(db.Integer)
+
+    bing = db.Column(db.Integer)
 
     n_a = db.Column(db.Integer)
 
